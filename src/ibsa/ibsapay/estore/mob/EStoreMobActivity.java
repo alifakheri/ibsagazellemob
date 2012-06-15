@@ -1,13 +1,13 @@
 package ibsa.ibsapay.estore.mob;
 
-import android.app.Activity;
 import android.os.Bundle;
+import org.apache.cordova.*;
 
-public class EStoreMobActivity extends Activity {
+public class EStoreMobActivity extends DroidGap  {
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        loadUrl("file:///android_asset/www/index.html");
     }
 }
